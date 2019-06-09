@@ -24,20 +24,13 @@
         Link.classList.toggle("site-lists__svg--active")
     });
 
+//авто прокрутка слайдера на css
     var slide = ["switch1" , "switch2" , "switch3" , "switch4"];
     var i = 0;
 
     setInterval(function(){
     document.getElementById(slide[i]).click();
     i = (i+1)%slide.length;}, 10000);
-
-//авто прокрутка слайдера на css
-    var slide = ["switch1" , "switch2" ];
-    var i = 0;
-
-    setInterval(function(){
-    document.getElementById(slide[i]).click();
-    i = (i+1)%slide.length;}, 5000);
 
 //прокрутка слайдера в портфолио на js
     var slideIndex = 1;
