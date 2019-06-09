@@ -10,7 +10,7 @@
     <style>
       .cls-1 {
         font-size: 20px;
-        fill: #010101;
+        fill: #000000;
         font-family: FontAwesome;
       }
     </style>
