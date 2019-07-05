@@ -310,8 +310,6 @@ a {
 .photographer-background {
   width: 100%;
   background: url("../img/photographer.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-          background-size: cover;
   margin: 0;
   padding: 0; }
 
