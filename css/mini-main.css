@@ -3820,3 +3820,2179 @@ a {
     -webkit-align-self: center;
         -ms-flex-item-align: center;
             align-self: center; } }
+.portfolio-background {
+  width: 100%;
+
+  background: url("../img/portfolio.jpg") no-repeat center center;
+  background-size: cover;
+
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column; 
+}
+
+.portfolio-slider__block2 {
+  max-width: 970px;
+  min-height: 752px;
+
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin: 0 auto;
+}
+
+.portfolio-slider__block1 {
+  max-width: 970px;
+  min-height: 720px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin: 0 auto;
+}
+
+.portfolio-slider__img {
+  width: 470px;
+  height: 345px;
+
+  background-color: #0d5294;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+  margin: 0;
+  margin-bottom: 3.2%;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.portfolio-slider__col {
+  position: relative;
+
+  margin-bottom: 14px;
+}
+
+.left1 {
+  content: "";
+  position: absolute;
+  z-index: 20;
+  top: 34vh;
+  left: 0.4%;
+  width: 60px;
+  height:60px;
+  background-image:url("../img/next-button-white.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transform: rotate(180deg);
+  outline: 0;
+  border: 0;
+  background-color: transparent;
+  opacity: 0.5;
+    &:hover {
+      opacity: 0.9;
+    }
+}
+
+.right1 {
+  content: "";
+  position: absolute;
+  z-index: 20;
+  right: 0.4%;
+  top: 34vh;
+  width: 60px;
+  height: 60px;
+  background-image: url("../img/next-button-white.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  opacity: 0.5;
+    &:hover {
+      opacity: 0.9;
+    }
+}
+
+.portfolio-slider__actions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 470px;
+  height: 345px;
+  background-color: #000000;
+  opacity: 0;
+
+  text-align: center;
+
+  transition: all 0.7s;
+  transform: scale(0);
+}
+
+.portfolio-slider__line {
+  display: block;
+  width: 170px;
+  height: 2px;
+  background-color: #ffffff;
+  
+  margin: 0 0 20px 150px;
+}
+
+.portfolio-slider__name {
+  font-family: "Roboto Slab", "Arial", sans-serif;
+  font-size: 24px;
+  line-height:40px;
+  color: #ffffff;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  margin-top: 126px;
+}
+
+.portfolio-slider__link {
+  font-family: "Roboto Slab", "Arial", sans-serif;
+  font-size: 20px;
+  line-height:20px;
+  color: #ffffff;
+  font-weight: 400;
+  font-style: normal;
+  transition: 0.9s;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+    &:hover {
+      font-size: 23px;
+    }
+}
+
+.portfolio-slider__img:hover .portfolio-slider__actions {
+  opacity: 0.8;
+  transform: scale(1);
+}
+
+.portfolio-slider__con {
+  max-width: 770px;
+  margin: 0 auto 85px;
+  text-align: center;
+}
+
+.portfolio-slider__text {
+  font-family: "Roboto Slab", "Arial", sans-serif;
+  font-size: 16px;
+  line-height:20px;
+  color: #ffffff;
+  font-weight: 300;
+  font-style: normal;
+
+  margin:0;
+  margin-bottom: 41px;
+}
+
+.portfolio-slider__button {
+  font-family: "Roboto Slab", "Arial", sans-serif;
+  font-size: 20px;
+  line-height:30px;
+  color: #ffffff;
+  font-weight: 400;
+  font-style: normal;
+
+  border: 2px solid #ffffff;
+
+  margin: 0;
+  padding: 15px 33px;
+  transition: 0.5s linear;
+    &:hover {
+      box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #0c52d5, 0 0 70px #0c52d5, 0 0 80px #0c52d5, 0 0 100px #0c52d5, 0 0 150px #0c52d5;
+    }
+}
+
+.portfolio-slider__block {
+  position: relative;
+}
+
+.hide-block {
+  display: none;
+}
+
+/* выполненые работы asy*/
+.portfolio-slider__work {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  background: #0d5294 url("../img/blue-background.jpg") no-repeat center center;
+  background-size: cover;
+  z-index: 30;
+  opacity: 0.98;
+}
+
+.portfolio-slider__work-active {
+  display: flex;
+}
+
+.portfolio-slider__work-wraper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.portfolio-slider__work-slider {
+  position: relative;  
+  width: 480px;
+  margin-left: 20%;
+}
+
+.portfolio-slider__work-slider input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.portfolio__image {
+  width: 100%;
+  line-height: 0;
+
+  display: flex;
+}
+
+.portfolio-slider__button-closed {
+  content: "";
+  position: absolute;
+  z-index: 20;
+  left: 130%;
+  top: 10%;
+  display: block;
+  width: 40px;
+  height: 41px;
+  background-image: url("../img/delete-button.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  outline: none;
+    &:hover {
+    opacity: 0.6;
+    }
+}
+
+#toggle-switch1:checked ~ .portfolio__controls label:nth-child(4), 
+#toggle-switch2:checked ~ .portfolio__controls label:nth-child(1),
+#toggle-switch3:checked ~ .portfolio__controls label:nth-child(2), 
+#toggle-switch4:checked ~ .portfolio__controls label:nth-child(3) {
+  content: "";
+  position: absolute;
+  z-index: 20;
+  left: 110%;
+  top: 10%;
+  display: block;
+  width: 40px;
+  height: 41px;
+  background-image: url("../img/left-arrow.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+#toggle-switch1:checked ~ .portfolio__controls label:nth-child(2), 
+#toggle-switch2:checked ~ .portfolio__controls label:nth-child(3),
+#toggle-switch3:checked ~ .portfolio__controls label:nth-child(4), 
+#toggle-switch4:checked ~ .portfolio__controls label:nth-child(1) {
+  content: "";
+  position: absolute;
+  z-index: 20;
+  top: 10%;
+  left: 150%;
+  display: block;
+  width: 40px;
+  height: 41px;
+  background-image:url("../img/right-arrow.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.portfolio__controls label:hover {
+  opacity: 0.6;
+}
+
+#toggle-switch1:checked ~ .portfolio__slides .portfolio__image1 {
+  display: block;
+}
+
+#toggle-switch2:checked ~ .portfolio__slides .portfolio__image2 {
+  display: block;
+}
+
+#toggle-switch3:checked ~ .portfolio__slides .portfolio__image3 {
+  display: block;
+}
+
+#toggle-switch4:checked ~ .portfolio__slides .portfolio__image4 {
+  display: block;
+}
+
+#toggle-switch1:checked ~ .portfolio__slides .portfolio__image-description1 {
+  display: block;
+}
+
+#toggle-switch2:checked ~ .portfolio__slides .portfolio__image-description2 {
+  display: block;
+}
+
+#toggle-switch3:checked ~ .portfolio__slides .portfolio__image-description3 {
+  display: block;
+}
+
+#toggle-switch4:checked ~ .portfolio__slides .portfolio__image-description4 {
+  display: block;
+}
+
+
+
+.portfolio__image1,
+.portfolio__image2,
+.portfolio__image3,
+.portfolio__image4 {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  margin-bottom: 15%;
+  cursor: zoom-in;
+  display: none;
+
+    &:focus {
+    position: absolute;
+    top: -20%;
+    left: 30vw;
+    transform: translate(-50%);
+    z-index: 31;
+    width: 80em;
+    height: 160em;
+    outline: none;
+    pointer-events: none;
+    }
+}
+
+.portfolio__image-description1,
+.portfolio__image-description2,
+.portfolio__image-description3,
+.portfolio__image-description4 {
+  display: none;
+
+  width: 70%;
+  position: absolute;
+  left: 110%;
+  margin: 0;
+
+  font-family: "Roboto Slab", "Arial", sans-serif;
+  font-size: 20px;
+  line-height:25px;
+  color: #ffffff;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 2px;
+}
+
+.portfolio__image-fone {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(240,240,240,.9);
+  cursor: zoom-out;
+  z-index: 30;
+}
+
+.portfolio__image1:focus ~ .portfolio__image-fone{
+  display: block;
+}
+
+.portfolio__image2:focus ~ .portfolio__image-fone{
+  display: block;
+}
+
+.portfolio__image3:focus ~ .portfolio__image-fone{
+  display: block;
+}
+
+.portfolio__image4:focus ~ .portfolio__image-fone{
+  display: block;
+}
+
+.portfolio-slider__texte {
+  width: 25%;
+  margin: 190px 3%;
+
+  font-family: "Roboto Slab", "Arial", sans-serif;
+  font-size: 16px;
+  line-height:20px;
+  color: #ffffff;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+/* выполненые работы volleyball*/
+.portfolio-slider__volleyball {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  background: #0d5294 url("../img/blue-background.jpg") no-repeat center center;
+  background-size: cover;
+  z-index: 30;
+  opacity: 0.98;
+}
+
+.portfolio-slider__volleyball-active {
+  display: flex;
+}
+
+.portfolio-slider__volleyball-wraper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.portfolio-slider__volleyball-slider {
+  position: relative;  
+  width: 480px;
+  margin-left: 20%;
+}
+
+.portfolio-slider__volleyball-slider input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.volleyball__image {
+  width: 100%;
+  line-height: 0;
+
+  display: flex;
+}
+
+.volleyball__button-closed {
+  content: "";
+  position: absolute;
+  z-index: 20;
+  left: 130%;
+  top: 10%;
+  display: block;
+  width: 40px;
+  height: 41px;
+  background-image: url("../img/delete-button.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  outline: none;
+    &:hover {
+    opacity: 0.6;
+    }
+}
+
+#volleyball-switch1:checked ~ .volleyball__controls label:nth-child(3), 
+#volleyball-switch2:checked ~ .volleyball__controls label:nth-child(1),
+#volleyball-switch3:checked ~ .volleyball__controls label:nth-child(2) {
+  content: "";
+  position: absolute;
+  z-index: 20;
+  left: 110%;
+  top: 10%;
+  display: block;
+  width: 40px;
+  height: 41px;
+  background-image: url("../img/left-arrow.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+#volleyball-switch1:checked ~ .volleyball__controls label:nth-child(2), 
+#volleyball-switch2:checked ~ .volleyball__controls label:nth-child(3),
+#volleyball-switch3:checked ~ .volleyball__controls label:nth-child(1) {
+  content: "";
+  position: absolute;
+  z-index: 20;
+  top: 10%;
+  left: 150%;
+  display: block;
+  width: 40px;
+  height: 41px;
+  background-image:url("../img/right-arrow.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.volleyball__controls label:hover {
+  opacity: 0.6;
+}
+
+#volleyball-switch1:checked ~ .volleyball__slides .volleyball__image1 {
+  display: block;
+}
+
+#volleyball-switch2:checked ~ .volleyball__slides .volleyball__image2 {
+  display: block;
+}
+
+#volleyball-switch3:checked ~ .volleyball__slides .volleyball__image3 {
+  display: block;
+}
+
+#volleyball-switch1:checked ~ .volleyball__slides .volleyball__image-description1 {
+  display: block;
+}
+
+#volleyball-switch2:checked ~ .volleyball__slides .volleyball__image-description2 {
+  display: block;
+}
+
+#volleyball-switch3:checked ~ .volleyball__slides .volleyball__image-description3 {
+  display: block;
+}
+
+.volleyball__image-description1,
+.volleyball__image-description2,
+.volleyball__image-description3 {
+  display: none;
+
+  width: 70%;
+  position: absolute;
+  left: 110%;
+  margin: 0;
+
+  font-family: "Roboto Slab", "Arial", sans-serif;
+  font-size: 20px;
+  line-height:25px;
+  color: #ffffff;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 2px;
+}
+
+.volleyball__image1,
+.volleyball__image2,
+.volleyball__image3 {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  margin-bottom: 15%;
+  cursor: zoom-in;
+  display: none;
+
+    &:focus {
+    position: absolute;
+    top: -20%;
+    left: 30vw;
+    transform: translate(-50%);
+    z-index: 31;
+    width: 80em;
+    height: 230em;
+    outline: none;
+    pointer-events: none;
+    }
+}
+
+.volleyball__image-fone {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(240,240,240,.9);
+  cursor: zoom-out;
+  z-index: 30;
+}
+
+.volleyball__image1:focus ~ .volleyball__image-fone{
+  display: block;
+}
+
+.volleyball__image2:focus ~ .volleyball__image-fone{
+  display: block;
+}
+
+.volleyball__image3:focus ~ .volleyball__image-fone{
+  display: block;
+}
+
+.volleyball__image4:focus ~ .volleyball__image-fone{
+  display: block;
+}
+
+.volleyball-slider__texte {
+  width: 25%;
+  margin: 230px 3%;
+
+  font-family: "Roboto Slab", "Arial", sans-serif;
+  font-size: 16px;
+  line-height:20px;
+  color: #ffffff;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Цифровой шарж */
+
+.portfolio-slider__cartoon {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 130%;
+
+  background: #0d5294 url("../img/blue-background.jpg") no-repeat center center;
+  background-size: cover;
+  z-index: 30;
+  opacity: 0.98;
+}
+
+.portfolio-slider__cartoon-active {
+  display: flex;
+}
+
+.wrapper-cartoon-img {
+  max-width: 1170px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin: 4% 0;
+}
+
+.cartoon-img {
+  position: absolute;
+  top: 150%;
+  left: 0;
+
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.cartoon-img img {
+  display: block;
+  vertical-align: middle;
+}
+
+.cartoon-slider {
+  position: absolute;
+  z-index: 40;
+  cursor: ew-resize;
+
+  width: 40px;
+  height: 40px;
+  background-color: #2196F3;
+  opacity: 0.7;
+  border-radius: 50%;
+}
+
+.wrapper-cartoon {
+  margin-left: -35px;
+}
+
+.cartoon__button-closed {
+  content: "";
+  position: absolute;
+  z-index: 20;
+  left: 50%;
+  bottom: 40px;
+  transform: translate(-50%, 0);
+  display: block;
+  width: 40px;
+  height: 41px;
+  background-image: url("../img/delete-button.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  outline: none;
+    &:hover {
+    opacity: 0.6;
+    }
+}
+
+/* Эффект распада */
+
+.portfolio-slider__decay {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 130%;
+
+  background: #0d5294 url("../img/blue-background.jpg") no-repeat center center;
+  background-size: cover;
+  z-index: 30;
+  opacity: 0.98;
+}
+
+.portfolio-slider__decay-active {
+  display: flex;
+}
+
+.wrapper-decay-img {
+  max-width: 1170px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin: 4% 0;
+}
+
+.decay-img {
+  position: absolute;
+  top: 150%;
+  left: 0;
+
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.decay-img img {
+  display: block;
+  vertical-align: middle;
+}
+
+.decay-slider {
+  position: absolute;
+  z-index: 40;
+  cursor: ew-resize;
+
+  width: 40px;
+  height: 40px;
+  background-color: #2196F3;
+  opacity: 0.7;
+  border-radius: 50%;
+}
+
+.wrapper-decay {
+  margin-left: -35px;
+}
+
+.decay__button-closed {
+  content: "";
+  position: absolute;
+  z-index: 20;
+  left: 50%;
+  bottom: 40px;
+  transform: translate(-50%, 0);
+  display: block;
+  width: 40px;
+  height: 41px;
+  background-image: url("../img/delete-button.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  outline: none;
+    &:hover {
+    opacity: 0.6;
+    }
+}
+
+/* 3Д текст */
+
+.portfolio-slider__text-3d {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 130%;
+
+  background: #0d5294 url("../img/blue-background.jpg") no-repeat center center;
+  background-size: cover;
+  z-index: 30;
+  opacity: 0.98;
+}
+
+.portfolio-slider__text-3d-active {
+  display: flex;
+}
+
+.wrapper-text-3d-img {
+  max-width: 1000px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin: 4% 0;
+}
+
+.text-3d__button-closed {
+  content: "";
+  position: absolute;
+  z-index: 20;
+  left: 50%;
+  top: -12%;
+  bottom: 40px;
+  transform: translate(-50%, 0);
+  display: block;
+  width: 40px;
+  height: 41px;
+  background-image: url("../img/delete-button.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  outline: none;
+    &:hover {
+    opacity: 0.6;
+    }
+}
+
+/* выполненые работы portfolio-photographer*/
+.portfolio-slider__photographer {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 125vh;
+
+  background: #0d5294 url("../img/blue-background.jpg") no-repeat center center;
+  background-size: cover;
+  z-index: 30;
+  opacity: 0.98;
+}
+
+.portfolio-slider__photographer-active {
+  display: flex;
+}
+
+.portfolio-slider__photographer-wraper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.portfolio-slider__photographer-slider {
+  position: relative;  
+  width: 480px;
+  margin-left: 20%;
+}
+
+.portfolio-slider__photographer-slider input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.photographer__image {
+  width: 100%;
+  line-height: 0;
+
+  display: flex;
+}
+
+.photographer-slider__button-closed {
+  content: "";
+  position: absolute;
+  z-index: 20;
+  left: 130%;
+  top: 125px;
+  display: block;
+  width: 40px;
+  height: 41px;
+  background-image: url("../img/delete-button.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  outline: none;
+    &:hover {
+    opacity: 0.6;
+    }
+}
+
+#toggle-photographer1:checked ~ .photographer__controls label:nth-child(12), 
+#toggle-photographer2:checked ~ .photographer__controls label:nth-child(1),
+#toggle-photographer3:checked ~ .photographer__controls label:nth-child(2),
+#toggle-photographer4:checked ~ .photographer__controls label:nth-child(3), 
+#toggle-photographer5:checked ~ .photographer__controls label:nth-child(4), 
+#toggle-photographer6:checked ~ .photographer__controls label:nth-child(5), 
+#toggle-photographer7:checked ~ .photographer__controls label:nth-child(6), 
+#toggle-photographer8:checked ~ .photographer__controls label:nth-child(7), 
+#toggle-photographer9:checked ~ .photographer__controls label:nth-child(8), 
+#toggle-photographer10:checked ~ .photographer__controls label:nth-child(9), 
+#toggle-photographer11:checked ~ .photographer__controls label:nth-child(10), 
+#toggle-photographer12:checked ~ .photographer__controls label:nth-child(11) {
+  content: "";
+  position: absolute;
+  z-index: 20;
+  left: 110%;
+  top: 125px;
+  display: block;
+  width: 40px;
+  height: 41px;
+  background-image: url("../img/left-arrow.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+#toggle-photographer1:checked ~ .photographer__controls label:nth-child(2), 
+#toggle-photographer2:checked ~ .photographer__controls label:nth-child(3),
+#toggle-photographer3:checked ~ .photographer__controls label:nth-child(4),
+#toggle-photographer4:checked ~ .photographer__controls label:nth-child(5), 
+#toggle-photographer5:checked ~ .photographer__controls label:nth-child(6), 
+#toggle-photographer6:checked ~ .photographer__controls label:nth-child(7), 
+#toggle-photographer7:checked ~ .photographer__controls label:nth-child(8), 
+#toggle-photographer8:checked ~ .photographer__controls label:nth-child(9), 
+#toggle-photographer9:checked ~ .photographer__controls label:nth-child(10), 
+#toggle-photographer10:checked ~ .photographer__controls label:nth-child(11), 
+#toggle-photographer11:checked ~ .photographer__controls label:nth-child(12), 
+#toggle-photographer12:checked ~ .photographer__controls label:nth-child(1) {
+  content: "";
+  position: absolute;
+  z-index: 20;
+  top: 125px;
+  left: 150%;
+  display: block;
+  width: 40px;
+  height: 41px;
+  background-image:url("../img/right-arrow.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.photographer__controls label:hover {
+  opacity: 0.6;
+}
+
+#toggle-photographer1:checked ~ .photographer__slides .photographer__image1,
+#toggle-photographer2:checked ~ .photographer__slides .photographer__image2,
+#toggle-photographer3:checked ~ .photographer__slides .photographer__image3,
+#toggle-photographer4:checked ~ .photographer__slides .photographer__image4,
+#toggle-photographer5:checked ~ .photographer__slides .photographer__image5,
+#toggle-photographer6:checked ~ .photographer__slides .photographer__image6,
+#toggle-photographer7:checked ~ .photographer__slides .photographer__image7,
+#toggle-photographer8:checked ~ .photographer__slides .photographer__image8,
+#toggle-photographer9:checked ~ .photographer__slides .photographer__image9,
+#toggle-photographer10:checked ~ .photographer__slides .photographer__image10,
+#toggle-photographer11:checked ~ .photographer__slides .photographer__image11,
+#toggle-photographer12:checked ~ .photographer__slides .photographer__image12 {
+  display: block;
+}
+
+#toggle-photographer1:checked ~ .photographer__slides .photographer__image-description1,
+#toggle-photographer2:checked ~ .photographer__slides .photographer__image-description2,
+#toggle-photographer3:checked ~ .photographer__slides .photographer__image-description3,
+#toggle-photographer4:checked ~ .photographer__slides .photographer__image-description4,
+#toggle-photographer5:checked ~ .photographer__slides .photographer__image-description5,
+#toggle-photographer6:checked ~ .photographer__slides .photographer__image-description6,
+#toggle-photographer7:checked ~ .photographer__slides .photographer__image-description7,
+#toggle-photographer8:checked ~ .photographer__slides .photographer__image-description8,
+#toggle-photographer9:checked ~ .photographer__slides .photographer__image-description9,
+#toggle-photographer10:checked ~ .photographer__slides .photographer__image-description10,
+#toggle-photographer11:checked ~ .photographer__slides .photographer__image-description11,
+#toggle-photographer12:checked ~ .photographer__slides .photographer__image-description12 {
+  display: block;
+}
+
+.photographer__image-description1,
+.photographer__image-description2,
+.photographer__image-description3,
+.photographer__image-description4,
+.photographer__image-description5,
+.photographer__image-description6,
+.photographer__image-description7,
+.photographer__image-description8,
+.photographer__image-description9,
+.photographer__image-description10,
+.photographer__image-description11,
+.photographer__image-description12 {
+  display: none;
+
+  width: 70%;
+  position: absolute;
+  left: 110%;
+  margin: 0;
+
+  font-family: "Roboto Slab", "Arial", sans-serif;
+  font-size: 20px;
+  line-height:25px;
+  color: #ffffff;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 2px;
+}
+
+.photographer__image1,
+.photographer__image2,
+.photographer__image3,
+.photographer__image4,
+.photographer__image5,
+.photographer__image6,
+.photographer__image7,
+.photographer__image8,
+.photographer__image9,
+.photographer__image10,
+.photographer__image11,
+.photographer__image12 {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  margin-bottom: 15%;
+  cursor: zoom-in;
+  display: none;
+
+    &:focus {
+    position: absolute;
+    top: -20%;
+    left: 30vw;
+    transform: translate(-50%);
+    z-index: 31;
+    width: 80em;
+    height: 150em;
+    outline: none;
+    pointer-events: none;
+    }
+}
+
+.photographer__image2,
+.photographer__image5,
+.photographer__image6,
+.photographer__image7,
+.photographer__image8,
+.photographer__image9,
+.photographer__image10,
+.photographer__image11,
+.photographer__image12 {
+  &:focus {
+    height: 50em;
+  }
+}
+
+.photographer__image3 {
+  &:focus {
+    height: 53em;
+  }
+}
+
+.photographer__image4 {
+  &:focus {
+    height: 135em;
+  }
+}
+
+.photographer__image-fone {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(240,240,240,.9);
+  cursor: zoom-out;
+  z-index: 30;
+}
+
+.photographer__image1:focus ~ .photographer__image-fone,
+.photographer__image2:focus ~ .photographer__image-fone,
+.photographer__image3:focus ~ .photographer__image-fone,
+.photographer__image4:focus ~ .photographer__image-fone,
+.photographer__image5:focus ~ .photographer__image-fone,
+.photographer__image6:focus ~ .photographer__image-fone,
+.photographer__image7:focus ~ .photographer__image-fone,
+.photographer__image8:focus ~ .photographer__image-fone,
+.photographer__image9:focus ~ .photographer__image-fone,
+.photographer__image10:focus ~ .photographer__image-fone,
+.photographer__image11:focus ~ .photographer__image-fone,
+.photographer__image12:focus ~ .photographer__image-fone {
+  display: block;
+}
+
+.photographer-slider__texte {
+  width: 25%;
+  margin: 260px 3%;
+
+  font-family: "Roboto Slab", "Arial", sans-serif;
+  font-size: 16px;
+  line-height:20px;
+  color: #ffffff;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.photographer__button {
+  font-family: "Roboto Slab", "Arial", sans-serif;
+  font-size: 20px;
+  line-height:30px;
+  color: #ffffff;
+  font-weight: 400;
+  font-style: normal;
+
+  position: absolute;
+    left: 0;
+    top: 75px;
+
+  border: 2px solid #ffffff;
+
+  display: inline-block;
+    margin: 120px 0 0 50px;
+  padding: 9px 16px 13px 16px;
+  transition: 0.5s linear;
+    &:hover {
+      box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #0c52d5, 0 0 70px #0c52d5, 0 0 80px #0c52d5, 0 0 100px #0c52d5, 0 0 150px #0c52d5;
+    }
+}
+
+/* выполненые работы баннеры*/
+.portfolio-slider__banner {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+
+  background: #0d5294 url("../img/blue-background.jpg") no-repeat center center;
+  background-size: cover;
+  z-index: 30;
+  opacity: 0.98;
+}
+
+.portfolio-slider__banner-active {
+  display: flex;
+}
+
+.portfolio-slider__banner-wraper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.portfolio-slider__banner-slider {
+  position: relative;  
+  width: 1170px;
+  margin: 95px auto 0;
+}
+
+.portfolio-slider__banner-slider input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.banner__image {
+  width: 100%;
+  line-height: 0;
+
+  display: flex;
+}
+
+.banner__button-closed {
+  content: "";
+  position: absolute;
+  z-index: 20;
+  left: 49%;
+  top: -25%;
+  display: block;
+  width: 40px;
+  height: 41px;
+  background-image: url("../img/delete-button.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  outline: none;
+    &:hover {
+    opacity: 0.6;
+    }
+}
+
+#banner-switch1:checked ~ .banner__controls label:nth-child(3), 
+#banner-switch2:checked ~ .banner__controls label:nth-child(1),
+#banner-switch3:checked ~ .banner__controls label:nth-child(2) {
+  content: "";
+  position: absolute;
+  z-index: 20;
+  left: 42%;
+  top: -25%;
+  display: block;
+  width: 40px;
+  height: 41px;
+  background-image: url("../img/left-arrow.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+#banner-switch1:checked ~ .banner__controls label:nth-child(2), 
+#banner-switch2:checked ~ .banner__controls label:nth-child(3),
+#banner-switch3:checked ~ .banner__controls label:nth-child(1) {
+  content: "";
+  position: absolute;
+  z-index: 20;
+  top: -25%;
+  left: 56%;
+  display: block;
+  width: 40px;
+  height: 41px;
+  background-image:url("../img/right-arrow.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.banner__controls label:hover {
+  opacity: 0.6;
+}
+
+#banner-switch1:checked ~ .banner__slides .banner__image1,
+#banner-switch2:checked ~ .banner__slides .banner__image2,
+#banner-switch3:checked ~ .banner__slides .banner__image3 {
+  display: block;
+  margin: 0 auto;
+}
+
+#banner-switch1:checked ~ .banner__slides .banner__image-description1 {
+  display: block;
+}
+
+#banner-switch2:checked ~ .banner__slides .banner__image-description2 {
+  display: block;
+}
+
+#banner-switch3:checked ~ .banner__slides .banner__image-description3 {
+  display: block;
+}
+
+.banner__image-description1,
+.banner__image-description2,
+.banner__image-description3 {
+  display: none;
+
+  width: 70%;
+  position: absolute;
+  left: 40%;
+  top: -12%;
+  margin: 0;
+
+  font-family: "Roboto Slab", "Arial", sans-serif;
+  font-size: 20px;
+  line-height:25px;
+  color: #ffffff;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 2px;
+}
+
+.banner__image1,
+.banner__image2,
+.banner__image3 {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  margin-bottom: 15%;
+  display: none;
+}
+
+
+.banner-slider__texte {
+  width: 40%;
+  margin: 20px auto 3%;
+
+  font-family: "Roboto Slab", "Arial", sans-serif;
+  font-size: 16px;
+  line-height:20px;
+  color: #ffffff;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@media screen and (max-width: 1320px) {
+
+  /* выполненые работы баннеры*/
+  .banner__image1,
+  .banner__image2 {
+    width: 1020px;
+    height: 450px;
+  }
+
+  .banner__image3 {
+    height: 450px;
+  }
+
+  .banner__image-description1,
+  .banner__image-description2,
+  .banner__image-description3 {
+    left: 37%;
+  }
+
+  .portfolio-slider__banner {
+    height: 105vh;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+
+  /* выполненые работы баннеры*/
+  .banner__image1,
+  .banner__image2 {
+    width: 720px;
+    height: 300px;
+  }
+
+  .banner__image3 {
+    height: 300px;
+    width: 200px;
+  }
+
+  .portfolio-slider__banner-slider {
+    margin: 50px auto 0;
+  }
+
+  .banner__image-description1,
+  .banner__image-description2,
+  .banner__image-description3 {
+    left: 37%;
+      top: -15%;
+  }
+
+  #banner-switch1:checked ~ .banner__controls label:nth-child(3),
+  #banner-switch2:checked ~ .banner__controls label:nth-child(1),
+  #banner-switch3:checked ~ .banner__controls label:nth-child(2) {
+    top: -35%;
+  }
+
+  .banner__button-closed {
+    top: -35%;
+  }
+
+  #banner-switch1:checked ~ .banner__controls label:nth-child(2),
+  #banner-switch2:checked ~ .banner__controls label:nth-child(3),
+  #banner-switch3:checked ~ .banner__controls label:nth-child(1) {
+    top: -35%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .portfolio-slider__img {
+    margin: 10px auto;
+  }
+
+  .portfolio-slider__actions {
+    opacity: 0.6;
+    transform: scale(1)
+  }
+
+  .left1 {
+    top: 700px;
+  }
+
+  .right1 {
+    top: 700px;
+  }
+
+  /* выполненые работы asy*/
+
+  .portfolio-slider__work-slider {
+    margin: 0 50%;
+    transform: translate(-50%, 0);
+    margin-top: 130px;
+  }
+
+  #toggle-switch1:checked ~ .portfolio__controls label:nth-child(4), 
+  #toggle-switch2:checked ~ .portfolio__controls label:nth-child(1),
+  #toggle-switch3:checked ~ .portfolio__controls label:nth-child(2), 
+  #toggle-switch4:checked ~ .portfolio__controls label:nth-child(3) {
+    left: 130px;
+    top: -140px;
+  }
+
+  #toggle-switch1:checked ~ .portfolio__controls label:nth-child(2), 
+  #toggle-switch2:checked ~ .portfolio__controls label:nth-child(3),
+  #toggle-switch3:checked ~ .portfolio__controls label:nth-child(4), 
+  #toggle-switch4:checked ~ .portfolio__controls label:nth-child(1) {
+    left: 300px;
+    top: -140px;
+  }
+
+  .portfolio-slider__button-closed {
+    left: 215px;
+    top: -140px;
+  }
+
+  .portfolio__image-description1, 
+  .portfolio__image-description2, 
+  .portfolio__image-description3, 
+  .portfolio__image-description4 {
+    width: 60%;
+    left: 30%;
+    top: -75px;
+    font-size: 16px;
+  }
+
+  .portfolio-slider__texte {
+    width: 60%;
+    margin: -30px auto 30px;
+    font-size: 14px;
+  }
+
+  .portfolio__image1,
+  .portfolio__image2,
+  .portfolio__image3,
+  .portfolio__image4 {
+    &:focus {
+    top: -150px;
+    left: 0;
+    width: 90vw;
+    height: 240vh;
+    }
+  }
+
+  .portfolio__image-fone {
+    width: 1000vw;
+    height:350vh;
+    top: -500px;
+    left: -500px;
+  }
+
+  /* выполненые работы volleyball*/
+
+  .portfolio-slider__volleyball-slider {
+    margin: 0 50%;
+    transform: translate(-50%, 0);
+    margin-top: 170px;
+  }
+
+  #volleyball-switch1:checked ~ .volleyball__controls label:nth-child(3), 
+  #volleyball-switch2:checked ~ .volleyball__controls label:nth-child(1),
+  #volleyball-switch3:checked ~ .volleyball__controls label:nth-child(2) {
+    left: 130px;
+    top: -180px;
+  }
+
+  #volleyball-switch1:checked ~ .volleyball__controls label:nth-child(2), 
+  #volleyball-switch2:checked ~ .volleyball__controls label:nth-child(3),
+  #volleyball-switch3:checked ~ .volleyball__controls label:nth-child(1) {
+    left: 300px;
+    top: -180px;
+  }
+
+  .volleyball__button-closed {
+    left: 215px;
+    top: -180px;
+  }
+
+  .volleyball__image-description1, 
+  .volleyball__image-description2, 
+  .volleyball__image-description3 {
+    width: 60%;
+    left: 30%;
+    top: -115px;
+    font-size: 16px;
+  }
+
+  .volleyball-slider__texte {
+    width: 60%;
+    margin: -30px auto 30px;
+    font-size: 14px;
+  }
+
+  .volleyball__image1,
+  .volleyball__image2,
+  .volleyball__image3 {
+    &:focus {
+    top: -150px;
+    left: 0;
+    width: 90vw;
+    height: 370vh;
+    }
+  }
+
+  .volleyball__image-fone {
+    width: 1000vw;
+    height:450vh;
+    top: -500px;
+    left: -500px;
+  }
+
+  /* выполненые работы portfolio-photographer*/
+  .portfolio-slider__photographer {
+    height: 205vh;
+  }
+
+  .portfolio-slider__photographer-slider {
+    margin: 0 50%;
+    transform: translate(-50%, 0);
+    margin-top: 170px;
+  }
+
+  #toggle-photographer1:checked ~ .photographer__controls label:nth-child(12), 
+  #toggle-photographer2:checked ~ .photographer__controls label:nth-child(1),
+  #toggle-photographer3:checked ~ .photographer__controls label:nth-child(2),
+  #toggle-photographer4:checked ~ .photographer__controls label:nth-child(3), 
+  #toggle-photographer5:checked ~ .photographer__controls label:nth-child(4), 
+  #toggle-photographer6:checked ~ .photographer__controls label:nth-child(5), 
+  #toggle-photographer7:checked ~ .photographer__controls label:nth-child(6), 
+  #toggle-photographer8:checked ~ .photographer__controls label:nth-child(7), 
+  #toggle-photographer9:checked ~ .photographer__controls label:nth-child(8), 
+  #toggle-photographer10:checked ~ .photographer__controls label:nth-child(9), 
+  #toggle-photographer11:checked ~ .photographer__controls label:nth-child(10), 
+  #toggle-photographer12:checked ~ .photographer__controls label:nth-child(11) {
+    left: 130px;
+    top: -180px;
+  }
+
+  #toggle-photographer1:checked ~ .photographer__controls label:nth-child(2), 
+  #toggle-photographer2:checked ~ .photographer__controls label:nth-child(3),
+  #toggle-photographer3:checked ~ .photographer__controls label:nth-child(4),
+  #toggle-photographer4:checked ~ .photographer__controls label:nth-child(5), 
+  #toggle-photographer5:checked ~ .photographer__controls label:nth-child(6), 
+  #toggle-photographer6:checked ~ .photographer__controls label:nth-child(7), 
+  #toggle-photographer7:checked ~ .photographer__controls label:nth-child(8), 
+  #toggle-photographer8:checked ~ .photographer__controls label:nth-child(9), 
+  #toggle-photographer9:checked ~ .photographer__controls label:nth-child(10), 
+  #toggle-photographer10:checked ~ .photographer__controls label:nth-child(11), 
+  #toggle-photographer11:checked ~ .photographer__controls label:nth-child(12), 
+  #toggle-photographer12:checked ~ .photographer__controls label:nth-child(1) {
+    left: 300px;
+    top: -180px;
+  }
+
+  .photographer-slider__button-closed {
+    left: 215px;
+    top: -180px;
+  }
+
+  .photographer__image-description1,
+  .photographer__image-description2,
+  .photographer__image-description3,
+  .photographer__image-description4,
+  .photographer__image-description5,
+  .photographer__image-description6,
+  .photographer__image-description7,
+  .photographer__image-description8,
+  .photographer__image-description9,
+  .photographer__image-description10,
+  .photographer__image-description11,
+  .photographer__image-description12 {
+    width: 60%;
+    left: 5%;
+    top: -115px;
+    font-size: 16px;
+  }
+
+  .photographer-slider__texte {
+    width: 60%;
+    margin: -30px auto 30px;
+    font-size: 14px;
+  }
+
+  .photographer__image1,
+  .photographer__image2,
+  .photographer__image3,
+  .photographer__image4,
+  .photographer__image5,
+  .photographer__image6,
+  .photographer__image7,
+  .photographer__image8,
+  .photographer__image9,
+  .photographer__image10,
+  .photographer__image11,
+  .photographer__image12  {
+    &:focus {
+    top: -150px;
+    left: 0;
+    width: 90vw;
+    height: 180vh;
+    }
+  }
+
+  .photographer__image2,
+  .photographer__image5,
+  .photographer__image6,
+  .photographer__image7,
+  .photographer__image8,
+  .photographer__image9,
+  .photographer__image10,
+  .photographer__image11,
+  .photographer__image12 {
+    &:focus {
+      height: 25em;
+    }
+  }
+
+  .photographer__image3 {
+    &:focus {
+      height: 28em;
+    }
+  }
+
+  .photographer__image4 {
+    &:focus {
+      height: 75em;
+    }
+  }
+
+  .photographer__image-fone {
+    width: 1000vw;
+    height:450vh;
+    top: -500px;
+    left: -500px;
+  }
+
+  .photographer__button {
+    margin: 0;
+    left: auto;
+    right: -140px;
+    top: 15px;
+  }
+
+  /* Цифровой шарж */
+
+  .wrapper-cartoon-img img {
+    width: 700px;
+    height: 460px;
+  }
+
+  .wrapper-cartoon-img {
+    max-width: 700px;
+  }
+
+  /* Эффект распада */
+
+  .wrapper-decay-img img {
+    width: 700px;
+    height: 460px;
+  }
+
+  .wrapper-decay-img {
+    max-width: 700px;
+  }
+
+  /* 3Д текст */
+
+  .wrapper-text-3d-img img {
+    width: 700px;
+    height: 490px;
+  }
+
+  .portfolio-slider__text-3d {
+    height: 140%;
+  }
+
+  .wrapper-text-3d-img {
+    max-width: 700px;
+  }
+
+  .text-3d__button-closed {
+    top: -15%;
+  }
+
+  /* выполненые работы баннеры*/
+  .banner__image1,
+  .banner__image2 {
+    width: 600px;
+    height: 250px;
+  }
+
+  .portfolio-slider__banner-slider {
+    height: 400px;
+    margin: 75px auto 0;
+  }
+
+  .banner__image-description1,
+  .banner__image-description2,
+  .banner__image-description3 {
+    left: 30%;
+    top: -11%;
+  }
+
+  .banner-slider__texte {
+    position: absolute;
+    top: 14%;
+    left: 17%;
+  }
+
+  #banner-switch1:checked ~ .banner__controls label:nth-child(3),
+  #banner-switch2:checked ~ .banner__controls label:nth-child(1),
+  #banner-switch3:checked ~ .banner__controls label:nth-child(2) {
+    left: 59%;
+    top: -27%;
+  }
+
+  .banner__button-closed {
+    left: 66%;
+    top: -27%;
+  }
+
+  #banner-switch1:checked ~ .banner__controls label:nth-child(2),
+  #banner-switch2:checked ~ .banner__controls label:nth-child(3),
+  #banner-switch3:checked ~ .banner__controls label:nth-child(1) {
+    left: 73%;
+    top: -27%;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+
+  .portfolio-slider__img img {
+    width: 270px;
+    height: 205px;
+  }
+
+  .portfolio-slider__img {
+    height: 205px;
+    width: 270px;
+    margin: 5px auto;
+  }
+
+  .portfolio-slider__img:nth-child(2) {
+    margin-bottom: 95px;
+  }
+
+  .wrapper-cartoon {
+    margin: 0;
+  } 
+
+  .portfolio-slider__actions {
+    width: 270px;
+    height: 205px;
+    opacity: 0.6;
+    transform: scale(1)
+  }
+
+  .portfolio-slider__name  {
+      margin-top: 60px;
+      font-size: 18px;
+      line-height: 25px;
+  }
+
+  .portfolio-slider__line {
+    margin: 0 0 20px 50px;
+  }
+
+  .portfolio-slider__link {
+    font-size: 18px;
+  }
+
+  .left1 {
+    top: 445px;
+    left: 10px;
+  }
+
+  .right1 {
+    top: 445px;
+    right: 10px;
+  }
+
+  /* выполненые работы asy*/
+
+  .portfolio__image img {
+    width: 290px;
+    height: 650px;
+  }
+
+  .portfolio-slider__work-slider {
+    margin: 0 50%;
+    transform: translate(-50%, 0);
+    margin-top: 130px;
+  }
+  
+  #toggle-switch1:checked ~ .portfolio__controls label:nth-child(4), 
+  #toggle-switch2:checked ~ .portfolio__controls label:nth-child(1),
+  #toggle-switch3:checked ~ .portfolio__controls label:nth-child(2), 
+  #toggle-switch4:checked ~ .portfolio__controls label:nth-child(3) {
+    left: 40px;
+    top: -140px;
+  }
+  
+  #toggle-switch1:checked ~ .portfolio__controls label:nth-child(2), 
+  #toggle-switch2:checked ~ .portfolio__controls label:nth-child(3),
+  #toggle-switch3:checked ~ .portfolio__controls label:nth-child(4), 
+  #toggle-switch4:checked ~ .portfolio__controls label:nth-child(1) {
+    left: 210px;
+    top: -140px;
+  }
+
+  .portfolio-slider__button-closed {
+    left: 125px;
+    top: -140px;
+  }
+
+  .portfolio__image-description1, 
+  .portfolio__image-description2, 
+  .portfolio__image-description3, 
+  .portfolio__image-description4 {
+    width: 80%;
+    left: 18%;
+    top: -75px;
+    font-size: 16px;
+  }
+
+  .portfolio-slider__texte {
+    width: 90%;
+    margin: -30px auto 30px;
+    font-size: 14px;
+  }
+
+  .portfolio__image1,
+  .portfolio__image2,
+  .portfolio__image3,
+  .portfolio__image4 {
+    &:focus {
+    top: -150px;
+    left: 0;
+    width: 100vw;
+    height: 130vh;
+    }
+  }
+
+  .portfolio__image-fone {
+    width: 1000vw;
+    height:250vh;
+    top: -500px;
+    left: -500px;
+  }
+
+  /* выполненые работы volleyball*/
+
+  .volleyball__image img {
+    width: 290px;
+    height: 800px;
+  }
+
+  .portfolio-slider__volleyball-slider {
+    margin: 0 50%;
+    transform: translate(-50%, 0);
+    margin-top: 190px;
+  }
+
+  #volleyball-switch1:checked ~ .volleyball__controls label:nth-child(3), 
+  #volleyball-switch2:checked ~ .volleyball__controls label:nth-child(1),
+  #volleyball-switch3:checked ~ .volleyball__controls label:nth-child(2) {
+    left: 40px;
+    top: -200px;
+  }
+
+  #volleyball-switch1:checked ~ .volleyball__controls label:nth-child(2), 
+  #volleyball-switch2:checked ~ .volleyball__controls label:nth-child(3),
+  #volleyball-switch3:checked ~ .volleyball__controls label:nth-child(1) {
+    left: 210px;
+    top: -200px;
+  }
+
+  .volleyball__button-closed {
+    left: 125px;
+    top: -200px;
+  }
+
+  .volleyball__image-description1, 
+  .volleyball__image-description2, 
+  .volleyball__image-description3, 
+  .volleyball__image-description4 {
+    width: 80%;
+    left: 18%;
+    top: -135px;
+    font-size: 16px;
+  }
+
+  .volleyball-slider__texte {
+    width: 90%;
+    margin: -30px auto 30px;
+    font-size: 14px;
+  }
+
+  .volleyball__image1,
+  .volleyball__image2,
+  .volleyball__image3,
+  .volleyball__image4 {
+    &:focus {
+    top: -150px;
+    left: 0;
+    width: 100vw;
+    height: 170vh;
+    }
+  }
+
+  .volleyball__image-fone {
+    width: 1000vw;
+    height:250vh;
+    top: -500px;
+    left: -500px;
+  }
+
+  /* выполненые работы portfolio-photographer*/
+
+  .portfolio-slider__photographer {
+    height: 165vh;
+  }
+
+  .photographer__image1 {
+    width: 290px;
+    height: 610px;
+      &:focus {
+        top: -150px;
+        left: 0;
+        width: 100vw;
+        height: 90vh;
+      }
+  }
+
+  .photographer__image2,
+  .photographer__image5,
+  .photographer__image6,
+  .photographer__image7,
+  .photographer__image8,
+  .photographer__image9,
+  .photographer__image10,
+  .photographer__image11,
+  .photographer__image12 {
+    width: 290px;
+    height: 200px;
+      &:focus {
+        top: -150px;
+        left: 0;
+        width: 100vw;
+        height: 35vh;
+      }
+  }
+
+  .photographer__image3 {
+    width: 290px;
+    height: 210px;
+      &:focus {
+        top: -150px;
+        left: 0;
+        width: 100vw;
+        height: 35vh;
+      }
+  }
+
+  .photographer__image4{
+    width: 290px;
+    height: 550px;
+      &:focus {
+        top: -150px;
+        left: 0;
+        width: 100vw;
+        height: 85vh;
+      }
+  }
+
+  .portfolio-slider__photographer-slider {
+    margin: 0 50%;
+    transform: translate(-50%, 0);
+    margin-top: 190px;
+  }
+
+  #toggle-photographer1:checked ~ .photographer__controls label:nth-child(12), 
+  #toggle-photographer2:checked ~ .photographer__controls label:nth-child(1),
+  #toggle-photographer3:checked ~ .photographer__controls label:nth-child(2),
+  #toggle-photographer4:checked ~ .photographer__controls label:nth-child(3), 
+  #toggle-photographer5:checked ~ .photographer__controls label:nth-child(4), 
+  #toggle-photographer6:checked ~ .photographer__controls label:nth-child(5), 
+  #toggle-photographer7:checked ~ .photographer__controls label:nth-child(6), 
+  #toggle-photographer8:checked ~ .photographer__controls label:nth-child(7), 
+  #toggle-photographer9:checked ~ .photographer__controls label:nth-child(8), 
+  #toggle-photographer10:checked ~ .photographer__controls label:nth-child(9), 
+  #toggle-photographer11:checked ~ .photographer__controls label:nth-child(10), 
+  #toggle-photographer12:checked ~ .photographer__controls label:nth-child(11) {
+    left: 40px;
+    top: -200px;
+  }
+
+  #toggle-photographer1:checked ~ .photographer__controls label:nth-child(2), 
+  #toggle-photographer2:checked ~ .photographer__controls label:nth-child(3),
+  #toggle-photographer3:checked ~ .photographer__controls label:nth-child(4),
+  #toggle-photographer4:checked ~ .photographer__controls label:nth-child(5), 
+  #toggle-photographer5:checked ~ .photographer__controls label:nth-child(6), 
+  #toggle-photographer6:checked ~ .photographer__controls label:nth-child(7), 
+  #toggle-photographer7:checked ~ .photographer__controls label:nth-child(8), 
+  #toggle-photographer8:checked ~ .photographer__controls label:nth-child(9), 
+  #toggle-photographer9:checked ~ .photographer__controls label:nth-child(10), 
+  #toggle-photographer10:checked ~ .photographer__controls label:nth-child(11), 
+  #toggle-photographer11:checked ~ .photographer__controls label:nth-child(12), 
+  #toggle-photographer12:checked ~ .photographer__controls label:nth-child(1) {
+    left: 210px;
+    top: -200px;
+  }
+
+  .photographer-slider__button-closed {
+    left: 125px;
+    top: -200px;
+  }
+
+  .photographer__image-description1,
+  .photographer__image-description5,
+  .photographer__image-description6,
+  .photographer__image-description7,
+  .photographer__image-description8,
+  .photographer__image-description9,
+  .photographer__image-description10,
+  .photographer__image-description11,
+  .photographer__image-description12 {
+    width: 80%;
+    left: 18%;
+    top: -135px;
+    font-size: 16px;
+  }
+
+  .photographer__image-description2,
+  .photographer__image-description3,
+  .photographer__image-description4 {
+    width: 60%;
+    left: 0;
+    top: -135px;
+    font-size: 16px;
+  }
+
+  .photographer-slider__texte {
+    width: 60%;
+    margin: -30px auto 30px;
+    font-size: 14px;
+  }
+
+  .photographer__image-fone {
+    width: 1000vw;
+    height:250vh;
+    top: -500px;
+    left: -500px;
+  }
+
+  .photographer__button {
+      font-size: 16px;
+      padding: 3px 10px 7px 10px;
+      right: -115px;
+      top: 30px;
+  }
+
+  /* Цифровой шарж */
+
+  .portfolio-slider__cartoon {
+    height: 100%;
+  }
+
+  .wrapper-cartoon-img img {
+    width: 320px;
+    height: 230px;
+  }
+
+  .wrapper-cartoon-img {
+    max-width: 320px;
+    top: 10%;
+  }
+
+  /* Эффект распада */
+
+  .portfolio-slider__decay {
+    height: 100%;
+  }
+
+  .wrapper-decay-img img {
+    width: 320px;
+    height: 230px;
+  }
+
+  .wrapper-decay-img {
+    max-width: 320px;
+    top: 10%;
+  }
+
+  /* 3Д текст */
+
+  .portfolio-slider__text-3d {
+    height: 100%;
+  }
+
+  .wrapper-text-3d-img img {
+    width: 320px;
+    height: 230px;
+  }
+
+  .wrapper-text-3d-img {
+    max-width: 320px;
+    top: 10%;
+  }
+
+  .text-3d__button-closed {
+    top: -30%;
+  }
+
+  /* выполненые работы баннеры*/
+  .banner__image1,
+  .banner__image2 {
+    width: 300px;
+    height: 140px;
+  }
+
+  .banner-slider__texte {
+    width: 90%;
+    top: 7%;
+    left: 10%;
+  }
+
+  .portfolio-slider__banner-slider {
+    height: 335px;
+    margin: 210px auto 0;
+  }
+
+  #banner-switch1:checked ~ .banner__controls label:nth-child(3),
+  #banner-switch2:checked ~ .banner__controls label:nth-child(1),
+  #banner-switch3:checked ~ .banner__controls label:nth-child(2) {
+    left: 25%;
+    top: -40%;
+  }
+
+  .banner__button-closed {
+    left: 45%;
+    top: -40%;
+  }
+
+  #banner-switch1:checked ~ .banner__controls label:nth-child(2),
+  #banner-switch2:checked ~ .banner__controls label:nth-child(3),
+  #banner-switch3:checked ~ .banner__controls label:nth-child(1) {
+    left: 65%;
+    top: -40%;
+  }
+
+  .banner__image-description1,
+  .banner__image-description2,
+  .banner__image-description3 {
+    left: 5%;
+    width: 90%;
+    top: -22%;
+    text-align: center;
+  }
+}
