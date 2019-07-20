@@ -225,3 +225,39 @@
         text3dActive.classList.remove("portfolio-slider__text-3d-active");
         text3dDisabled.classList.remove("hide-block");                              
     });
+
+//активация работ photographer
+    var portfolioPhotographer = document.querySelector(".portfolio-photographer");
+    var photographerActive = document.querySelector(".portfolio-slider__photographer");
+    var photographerDisabled = document.querySelector(".portfolio");
+    var photographerClosed = document.querySelector(".photographer-slider__button-closed");
+
+    portfolioPhotographer.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        photographerActive.classList.add("portfolio-slider__photographer-active");
+        photographerDisabled.classList.add("hide-block");
+    });
+
+    photographerClosed.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        photographerActive.classList.remove("portfolio-slider__photographer-active");
+        photographerDisabled.classList.remove("hide-block");
+    });
+
+//активация работ баннеры
+    var portfolioBanner = document.querySelector(".portfolio-banner");
+    var bannerActive = document.querySelector(".portfolio-slider__banner");
+    var bannerDisabled = document.querySelector(".portfolio");
+    var bannerClosed = document.querySelector(".banner__button-closed");
+
+    portfolioBanner.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        bannerActive.classList.add("portfolio-slider__banner-active");
+        bannerDisabled.classList.add("hide-block");
+    });
+
+    bannerClosed.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        bannerActive.classList.remove("portfolio-slider__banner-active");
+        bannerDisabled.classList.remove("hide-block");
+    });
